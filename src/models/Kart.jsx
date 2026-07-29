@@ -26,7 +26,7 @@ export function Kart({
   backWheelOffset,
   inputTurn
 }) {
-  const { nodes, materials } = useGLTF("/models/kart.glb");
+  const { nodes, materials } = useGLTF("./models/kart.glb");
 
   const wheel3 = useRef(null);
   const wheel2 = useRef(null);
@@ -441,4 +441,4 @@ export function Kart({
   );
 }
 
-useGLTF.preload("/models/kart.glb");
+useGLTF.preload("./models/kart.glb");
