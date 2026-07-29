@@ -38,7 +38,7 @@ export const Trails = ({ dash = 0.9, radius = 1, left}) => {
   )
 }
 
-function Fatline({ curve, width, color, speed, dash, delay, radius, left}) {
+function Fatline({ curve, width, color, speed, radius, left}) {
   const ref = useRef()
   const geoRef = useRef()
   useFrame((_, delta) => {

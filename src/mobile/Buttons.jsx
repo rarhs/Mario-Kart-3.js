@@ -5,7 +5,7 @@ export const Buttons = () => {
   const setJumpButtonPressed = useGameStore((state) => state.setJumpButtonPressed);
   const buttonRef = useRef(null);
 
-  const handleStart = (e) => {
+  const handleStart = () => {
     // e.preventDefault(); 
     setJumpButtonPressed(true);
     buttonRef.current?.classList.add("pressed");

@@ -182,7 +182,6 @@ export function Kart({
     const d = wheelPositions[3];
 
     const pitch = (c.y + d.y - (a.y + b.y)) * 0.5;
-    const roll = (b.y - a.y + d.y - c.y) * 0.5;
 
     const averageYPos = 0.65 + (a.y + b.y + c.y + d.y) / 4;
     setGroundPosition(averageYPos);

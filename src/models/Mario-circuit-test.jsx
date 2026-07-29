@@ -7,12 +7,11 @@ Files: mario-circuit-test.glb [4.2MB] > C:\Users\mouli\Mario-Kart-3.js\public\ma
 import React from 'react'
 import { Merged, useGLTF } from '@react-three/drei'
 import { useEffect } from 'react'
-import { MeshBVH, acceleratedRaycast } from 'three-mesh-bvh'
 import { useGameStore } from '../store'
 import { useRef } from 'react'
 
 export function Track(props) {
-  const { nodes, materials, scene } = useGLTF('./models/mario-circuit-test-transformed.glb')
+  const { nodes, materials } = useGLTF('./models/mario-circuit-test-transformed.glb')
   const trackRef = useRef(null)
   
   const setTrackScene = useGameStore((state) => state.setTrackScene);

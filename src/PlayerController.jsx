@@ -380,8 +380,6 @@ export const PlayerController = () => {
         gamepadRef.current.buttons[7].pressed;
       gamepadButtons.x = gamepadRef.current.axes[0];
     }
-    const time = state.clock.getElapsedTime();
-
     updateSpeed(forward, backward, delta);
     rotatePlayer(left, right, player, joystick.x, delta);
     updatePlayer(player, speedRef.current, camera, kart, delta);
