@@ -7,7 +7,7 @@ export const EnvironmentSphere = () => {
 const color1 = "#9bdbd9";
 const color2 = "#137aff";
   
-  const sunTexture = useTexture('/textures/sun.png')
+  const sunTexture = useTexture('./textures/sun.png')
 
   return (
     <> <mesh

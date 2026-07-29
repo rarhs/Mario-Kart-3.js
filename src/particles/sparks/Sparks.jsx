@@ -11,7 +11,7 @@ export const Sparks = forwardRef(({ left }, ref) => {
   const simulationTimeRef = useRef(0);
   const shouldEmitRef = useRef(false);
 
-  const texture = useTexture("/textures/particles/alpha.png");
+  const texture = useTexture("./textures/particles/alpha.png");
 
   const particleCount = 300;
   const positions = [];
