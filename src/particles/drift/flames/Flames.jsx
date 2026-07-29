@@ -6,7 +6,6 @@ import {
   PlaneGeometry,
   Vector3,
   Color,
-  Quaternion,
   Euler,
   BackSide,
   DoubleSide,
@@ -60,7 +59,6 @@ export const Flames = () => {
 
   useFrame((state, delta) => {
     if (!ref.current) return;
-    const camera = state.camera;
     const flamePositions = useGameStore.getState().flamePositions;
     const isBoosting = useGameStore.getState().isBoosting;
     if (
@@ -103,7 +101,6 @@ export const Flames = () => {
     }
 
     const GRAVITY = 3.;
-    const q = ref.current.parent.getWorldQuaternion(new Quaternion())
     ref.current.updateInstances((obj) => {
       obj.currentTime += delta * 0.4 
       obj.setUniform("uCurrentTime", obj.currentTime);

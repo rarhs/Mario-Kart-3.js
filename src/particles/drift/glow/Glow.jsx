@@ -9,7 +9,6 @@ import { useGameStore } from "../../../store";
 
 
 export const Glow = forwardRef(({ driftDirection }, ref) => {
-  const materialRef = useRef(null);
   const sparkRef = useRef(null);
   let noiseTexture = null;
   

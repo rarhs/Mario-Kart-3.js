@@ -15,7 +15,6 @@ import VFXEmitter from "../wawa-vfx/VFXEmitter.tsx";
 import { useGameStore } from "../store.js";
 import Flames from "../particles/drift/flames/Flames.jsx";
 
-const animationsNames = ["IDLE-KART", "TURN-LEFT", "TURN-RIGHT", "wind"];
 export function Model({ speed, inputTurn, driftDirection, driftPower, backWheelOffset, jumpOffset }) {
   const group = React.useRef();
   const { scene, animations } = useGLTF("./models/witch-transformed.glb");

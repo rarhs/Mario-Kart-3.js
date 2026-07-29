@@ -1,5 +1,5 @@
 import { useFrame } from "@react-three/fiber";
-import { forwardRef, useImperativeHandle, useRef, useMemo, useEffect } from "react";
+import { forwardRef, useImperativeHandle, useRef, useMemo } from "react";
 import { ShaderMaterial, DoubleSide } from "three";
 import fragmentShader from './fragment.glsl';
 import vertexShader from './vertex.glsl';
