@@ -16,6 +16,7 @@ There is no test framework in this project.
 
 - When adding a feature, create a feature branch off `main` and work there — do not commit features directly to `main`.
 - Do not add a "Co-Authored-By: Claude" line (or any co-author trailer) to commit messages.
+- Never merge a feature branch into `main` without the user's explicit approval. In particular, `feature/sound` (game audio) is on hold until the user approves the merge.
 
 Append `?debug` to the dev URL to enable collision debugging (red wireframe wall collider, green BVH helper, cyan player capsule).
 
